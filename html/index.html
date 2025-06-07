@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Gina Travel - Tu aventura empieza aquí</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f9f9f9;
+    }
+    header {
+      background: url('https://source.unsplash.com/1600x600/?travel') no-repeat center center/cover;
+      color: white;
+      text-align: center;
+      padding: 100px 20px;
+    }
+    header h1 {
+      font-size: 3em;
+      margin-bottom: 0.5em;
+    }
+    header p {
+      font-size: 1.3em;
+    }
+    .cta-button {
+      background-color: #ff6b00;
+      color: white;
+      padding: 15px 30px;
+      font-size: 1.1em;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      margin-top: 20px;
+    }
+    .section {
+      padding: 50px 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+    .section h2 {
+      text-align: center;
+      margin-bottom: 40px;
+      color: #333;
+    }
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      background: white;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+    .card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+    .card-content {
+      padding: 20px;
+    }
+    .card-content h3 {
+      margin-top: 0;
+    }
+    .testimonials {
+      background-color: #fff3e0;
+      padding: 50px 20px;
+    }
+    .testimonial {
+      max-width: 800px;
+      margin: auto;
+      font-style: italic;
+      text-align: center;
+      color: #555;
+    }
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 30px 20px;
+    }
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2em;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Explora el mundo con Gina Travel</h1>
+  <p>Viajes inolvidables a destinos de ensueño</p>
+  <button class="cta-button">Ver Paquetes</button>
+</header>
+
+<section class="section" id="paquetes">
+  <h2>Paquetes Destacados</h2>
+  <div class="cards">
+    <div class="card">
+      <img src="https://source.unsplash.com/400x300/?paris" alt="París" />
+      <div class="card-content">
+        <h3>París Romántico</h3>
+        <p>5 días en la ciudad del amor, con tours y hotel 4 estrellas.</p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="https://source.unsplash.com/400x300/?machu-picchu" alt="Machu Picchu" />
+      <div class="card-content">
+        <h3>Aventura en Cusco</h3>
+        <p>Tour completo por el Valle Sagrado y Machu Picchu.</p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="https://source.unsplash.com/400x300/?beach" alt="Playa" />
+      <div class="card-content">
+        <h3>Caribe Todo Incluido</h3>
+        <p>Disfruta 7 días en un resort en Punta Cana o Cancún.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="testimonials">
+  <h2>Lo que dicen nuestros viajeros</h2>
+  <div class="testimonial">
+    “Gracias a Gina Travel vivimos una luna de miel inolvidable en Europa. Todo estuvo bien organizado y sin contratiempos.”
+    <br><strong>— Carla y Miguel</strong>
+  </div>
+</section>
+
+<footer>
+  <p>© 2025 Gina Travel. Todos los derechos reservados.</p>
+</footer>
+
+</body>
+</html>
